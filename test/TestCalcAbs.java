@@ -4,7 +4,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.HashMap;
 
-import calc.CalculatorFace;
+import src.CalculatorFace;
 
 import static org.junit.Assert.*;
 
@@ -59,7 +59,7 @@ public abstract class TestCalcAbs {
     
     protected TestFace freshCalc() {
         TestFace f = new TestFace();
-        calc.SetUp.setUpCalculator(f);
+        src.SetUp.setUpCalculator(f);
         return f;
     }
     

@@ -1,8 +1,10 @@
-package calc;
+package src;
+
+import java.awt.event.*; 
 /**
- * ClearListener.java
+ * DecimalListener.java
  * 
- * Class to set up action listener for clear button C
+ * Class to set up action listener for decimal button .
  * 
  * @author Tim Kartawijaya
  * 
@@ -10,10 +12,9 @@ package calc;
  * Project 2: Calculator 
  * September 23, 2017
  */
-import java.awt.event.*;
 
-public class ClearListener implements ActionListener{
-
+public class DecimalListener implements ActionListener {
+	
 	/**
 	 * Internal object that contains the methods for this button
 	 */
@@ -23,16 +24,15 @@ public class ClearListener implements ActionListener{
 	 * Constructor
 	 * @param internal Internal object that contains the method for this button
 	 */
-	public ClearListener(Internal internal) {
+	public DecimalListener(Internal internal) {
 		this.internal = internal;
-		
 	}
 	
 	/**
-	 * Call the reset internal method
+	 * Call the insertDecimal internal method
 	 * @param ae unused
 	 */
 	public void actionPerformed(ActionEvent ae) {
-		internal.reset();
+		internal.insertDecimal();
 	}
 }

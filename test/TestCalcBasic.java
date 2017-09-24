@@ -3,7 +3,7 @@ package test;
 
 import org.junit.Test;
 
-import calc.CalculatorFace;
+import src.CalculatorFace;
 
 public class TestCalcBasic extends TestCalcAbs {
 
